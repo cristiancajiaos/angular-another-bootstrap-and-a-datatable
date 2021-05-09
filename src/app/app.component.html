@@ -1,0 +1,34 @@
+<div class="container pt-2">
+  <h1>Another Bootstrap and a Datatable</h1>
+
+  <ngx-datatable
+    class="material"
+    [rows]="films"
+    [columns]="columns"
+    rowHeight="50"
+    headerHeight="50"
+    footerHeight="50"
+    columnMode="force"
+    limit="10">
+    <ngx-datatable-column class="p-0" prop="title">
+      <ng-template let-value="value">
+        {{value}}
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column class="p-0" prop="year">
+      <ng-template let-value="value">
+        {{value}}
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column class="p-0" prop="country">
+      <ng-template let-value="value">
+        {{value}}
+      </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column class="p-0" prop="duration">
+      <ng-template let-value="value">
+        {{value}}
+      </ng-template>
+    </ngx-datatable-column>
+  </ngx-datatable>
+</div>
